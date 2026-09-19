@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Serviços</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; }
+        header { background-color: #1a1a1a; color: #fff; padding: 20px; text-align: center; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; text-align: center; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .btn-agendar { display: inline-block; background-color: #e67e22; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+        .btn-agendar:hover { background-color: #d35400; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Central de Serviços</h1>
+        <p>Barbearia, Cabeleireiro e Chaveiro</p>
+    </header>
+    <div class="container">
+        <div class="services-grid">
+            <div class="card">
+                <h2>Corte & Barba</h2>
+                <p>Cabelo, barba alinhada e os melhores produtos para o seu visual.</p>
+                <a href="https://wa.me" target="_blank" class="btn-agendar">Agendar pelo WhatsApp</a>
+            </div>
+            <div class="card">
+                <h2>Cabeleireiro</h2>
+                <p>Cortes modernos, coloração, hidratação e penteados especiais.</p>
+                <a href="https://wa.me" target="_blank" class="btn-agendar">Agendar pelo WhatsApp</a>
+            </div>
+            <div class="card">
+                <h2>Chaveiro 24h</h2>
+                <p>Abertura de portas, cópias de chaves residenciais e automotivas.</p>
+                <a href="https://wa.me" target="_blank" class="btn-agendar">Chamar no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
