@@ -1,0 +1,9 @@
+# Arquivos de sistema e temporários
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Pastas de IDEs locais
+.vscode/
+.idea/
