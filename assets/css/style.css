@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+.agency-banner { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; padding: 60px 20px; text-align: center; border-bottom: 5px solid #3b82f6; }
+.agency-banner h1 { font-size: 2.3rem; margin-bottom: 15px; color: #3b82f6; }
+.agency-banner p { max-width: 750px; margin: 0 auto 25px; font-size: 1.1rem; color: #e2e8f0; }
+.badge { display: inline-block; background-color: #3b82f6; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; }
+.btn-agency { display: inline-block; background-color: #10b981; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
+.btn-agency:hover { background-color: #059669; }
+.demo-divider { background-color: #3b82f6; text-align: center; padding: 12px; font-weight: bold; color: #fff; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; }
+.filter-container { max-width: 1200px; margin: 30px auto 10px; padding: 0 20px; text-align: center; }
+.filter-btn { background: #e2e8f0; border: none; padding: 8px 18px; margin: 5px; border-radius: 20px; font-weight: 600; color: #475569; cursor: pointer; transition: all 0.3s; }
+.filter-btn.active, .filter-btn:hover { background: #1e293b; color: #fff; }
+.client-preview-container { border: 3px dashed #3b82f6; margin: 10px auto 40px; max-width: 1200px; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+.demo-header { background-color: #1a1a1a; color: #fff; padding: 30px 20px; text-align: center; }
+.demo-header h2 { font-size: 1.8rem; }
+.demo-header p { color: #a3a3a3; font-size: 0.95rem; margin-top: 5px; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; padding: 30px 20px; }
+.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 25px; text-align: center; transition: all 0.3s ease; }
+.card.hidden { display: none; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+.price-tag { font-size: 1.5rem; font-weight: bold; color: #1e293b; margin: 15px 0; display: block; }
+.price-tag span { font-size: 0.85rem; color: #64748b; font-weight: normal; }
+.btn-agendar { display: inline-block; background-color: #e67e22; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; width: 100%; margin-top: 10px; }
+.btn-agendar:hover { background-color: #d35400; }
+.crm-simulation { background-color: #f1f5f9; padding: 30px 20px; border-top: 1px solid #e2e8f0; text-align: center; }
+.crm-simulation h4 { font-size: 1.2rem; color: #0f172a; margin-bottom: 10px; }
+.crm-simulation p { color: #475569; font-size: 0.95rem; max-width: 600px; margin: 0 auto 20px; }
+.crm-form { display: flex; justify-content: center; gap: 10px; max-width: 500px; margin: 0 auto; flex-wrap: wrap; }
+.crm-input { padding: 10px 15px; border: 1px solid #cbd5e1; border-radius: 6px; flex: 1; min-width: 200px; font-size: 0.95rem; }
+.btn-submit { background-color: #3b82f6; color: #fff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
+.btn-submit:hover { background-color: #2563eb; }
+footer { text-align: center; padding: 30px; background-color: #0f172a; color: #94a3b8; font-size: 0.9rem; }

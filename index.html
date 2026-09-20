@@ -3,84 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogério M. - Desenvolvimento Web & Modelos Comerciais</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
-        
-        /* Seção do Desenvolvedor (Seu Portfólio) */
-        .agency-banner { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; padding: 60px 20px; text-align: center; border-bottom: 5px solid #3b82f6; }
-        .agency-banner h1 { font-size: 2.5rem; margin-bottom: 15px; color: #3b82f6; }
-        .agency-banner p { max-width: 700px; margin: 0 auto 25px; font-size: 1.1rem; color: #94a3b8; }
-        .badge { display: inline-block; background-color: #3b82f6; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; }
-        .btn-agency { display: inline-block; background-color: #10b981; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
-        .btn-agency:hover { background-color: #059669; }
-
-        /* Divisor de Demonstração */
-        .demo-divider { background-color: #e2e8f0; text-align: center; padding: 15px; font-weight: bold; color: #475569; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
-
-        /* Estilos do Modelo Comercial (O que o cliente final vê) */
-        .client-preview-container { border: 4px dashed #cbd5e1; margin: 30px auto; max-width: 1200px; border-radius: 12px; overflow: hidden; background: #fff; }
-        .demo-header { background-color: #1a1a1a; color: #fff; padding: 30px 20px; text-align: center; }
-        .demo-header h2 { font-size: 2rem; }
-        .demo-header p { color: #a3a3a3; font-size: 1rem; margin-top: 5px; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; padding: 40px 20px; }
-        .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 25px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
-        .card h3 { color: #1a1a1a; margin-bottom: 12px; font-size: 1.4rem; }
-        .card p { color: #64748b; font-size: 0.95rem; margin-bottom: 20px; }
-        .btn-agendar { display: inline-block; background-color: #e67e22; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; width: 100%; }
-        .btn-agendar:hover { background-color: #d35400; }
-
-        footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; background-color: #f1f5f9; border-top: 1px solid #e2e8f0; }
-    </style>
+    <title>Rogério M. - Engenharia Web</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <!-- BLOCO DA SUA AGÊNCIA DE DESENVOLVIMENTO -->
     <section class="agency-banner">
-        <span class="badge">Modelo de Demonstração Interativo</span>
-        <h1>Precisa de um site moderno para o seu negócio?</h1>
-        <p>Desenvolvo páginas de alta conversão, totalmente responsivas e integradas diretamente ao seu WhatsApp para agilizar seus agendamentos e vendas.</p>
-        <a href="https://wa.me" target="_blank" class="btn-agency">Solicitar Orçamento Conosco</a>
+        <span class="badge">Demonstrativo para Prospecção Comercial</span>
+        <h1>Procurando uma Máquina de Captar Clientes Locais?</h1>
+        <p>Desenvolvo páginas profissionais ultra-velozes com integração direta ao ecossistema do seu WhatsApp.</p>
+        <a href="https://wa.me" target="_blank" class="btn-agency">Solicitar Proposta</a>
     </section>
 
-    <div class="demo-divider">⬇️ O quadro abaixo representa um exemplo prático aplicado a comércios locais ⬇️</div>
+    <div class="demo-divider">🧪 Área de Demonstração Interativa</div>
 
-    <!-- QUADRO DEMONSTRATIVO PARA O SEU CLIENTE VER -->
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterServices('todos')">Todos os Serviços</button>
+        <button class="filter-btn" onclick="filterServices('estetica')">Beleza & Estética</button>
+        <button class="filter-btn" onclick="filterServices('urgencia')">Urgência e Reparos</button>
+    </div>
+
     <main class="client-preview-container">
         <header class="demo-header">
-            <h2>Central de Serviços Express</h2>
-            <p>Agende seu atendimento em poucos cliques via WhatsApp</p>
+            <h2>Central de Atendimento & Agendamentos</h2>
+            <p>Escolha o serviço desejado para iniciar seu atendimento</p>
         </header>
-
         <div class="services-grid">
-            <!-- Barbearia -->
-            <div class="card">
-                <h3>Corte & Barba</h3>
-                <p>Cabelo, barba alinhada à navalha com acabamento moderno e toalha quente.</p>
+            <div class="card" data-category="estetica">
+                <h3>Corte & Barba Premium</h3>
+                <p>Cabelo, barba alinhada à navalha e toalha quente.</p>
+                <span class="price-tag">R$ 60,00 <span>/ serviço</span></span>
                 <a href="https://wa.me" target="_blank" class="btn-agendar">Agendar Barbearia</a>
             </div>
-
-            <!-- Cabeleireiro -->
-            <div class="card">
-                <h3>Estúdio de Beleza</h3>
-                <p>Cortes exclusivos, hidratação profunda, coloração profissional e penteados.</p>
-                <a href="https://wa.me" target="_blank" class="btn-agendar">Agendar Horário</a>
+            <div class="card" data-category="estetica">
+                <h3>Estúdio de Beleza Feminino</h3>
+                <p>Cortes exclusivos e coloração profissional.</p>
+                <span class="price-tag">R$ 120,00 <span>/ a partir de</span></span>
+                <a href="https://wa.me" target="_blank" class="btn-agendar">Agendar Salão</a>
             </div>
-
-            <!-- Chaveiro -->
-            <div class="card">
-                <h3>Chaveiro Residencial & Auto</h3>
-                <p>Abertura de portas emergenciais 24h, confecção e cópia de chaves codificadas.</p>
+            <div class="card" data-category="urgencia">
+                <h3>Chaveiro Residencial & Automotivo</h3>
+                <p>Abertura de portas de emergência 24h.</p>
+                <span class="price-tag">Sob Consulta</span>
                 <a href="https://wa.me" target="_blank" class="btn-agendar">Chamar Chaveiro</a>
             </div>
         </div>
+        <section class="crm-simulation">
+            <h4>🎁 Quer ganhar 10% de desconto?</h4>
+            <form class="crm-form" onsubmit="simulateLeadCapture(event)">
+                <input type="text" id="leadName" class="crm-input" placeholder="Seu nome completo" required>
+                <input type="email" id="leadEmail" class="crm-input" placeholder="Seu melhor e-mail" required>
+                <button type="submit" class="btn-submit">Garantir Desconto</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>Diga-nos o que o seu negócio precisa e nós montamos sua estrutura digital. Contato: (16) 99786-3346</p>
+        <p>Solução desenvolvida por Rogério Sá de Macedo — Contato: (16) 99786-3346</p>
     </footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
